@@ -1,0 +1,12 @@
+This is a simple server capable of handling requests from multiple clients, where clients can join or leave at any time. 
+This server only implements a simple service, converting strings to title-case.
+
+1. Run make to compile client and server.
+2. ./stringServer
+3. Manually set the SERVER ADDRESS and SERVER PORT environment variables on the client machine. (Use setenv if using C shell)
+4. ./stringClient (The client may not be running on the same machine as the server)
+5. Enter string(s) on client machine
+
+Note:
+1. Part of code is reused from <Beej's Guide to Network Programming> as indicated in comment.
+2. As long as server and client run normally, no error message should be printed.
